@@ -7,11 +7,11 @@ Command line tool for embedding PEM-encoded X509 certificates and public keys in
 Usage
 =====
 
-## Compilation
+### Compilation
 
-Compile using `gcc pem2c.c -o pem2c -O2 -lcrypto` or download a precopmiled binary for Windows in the releases section.
+Compile using `gcc pem2c.c -o pem2c -O2 -lcrypto` or download a precompiled binary for Windows in the releases section.
 
-## Command-line
+### Command-line
 
 This utility reads the PEM-encoded file from stin, and writes a header file to stdout. The first argument describes the file type, the second argument the macro name used in the header file:
 
@@ -21,7 +21,7 @@ Note that pem2c can process multiple certificate files for building certificate 
 
 `cat my-root-ca.pem my-intermediate-ca.pem | pem2c x509 MY_CERT_CHAIN >my-ca-header.h`
 
-## Loading certificates
+### Loading certificates
 
 The following function imports a certificate chain back into a X509_STORE object:
 ```c++
