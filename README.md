@@ -4,9 +4,6 @@ pem2c
 Command line tool for embedding PEM-encoded X509 certificates and public keys into C programs
 
 
-Usage
-=====
-
 ### Compilation
 
 Compile using `gcc pem2c.c -o pem2c -O2 -lcrypto` or download a precompiled binary for Windows in the releases section.
