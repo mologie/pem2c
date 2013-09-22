@@ -6,7 +6,7 @@ Command line tool for embedding PEM-encoded X509 certificates and public keys in
 
 ### Compilation
 
-Compile using `gcc pem2c.c -o pem2c -O2 -lcrypto` or download a precompiled binary for Windows in the releases section.
+Compile using `gcc pem2c.c -o pem2c -O2 -lcrypto` or download a precompiled binary for Windows from the [releases](https://github.com/mologie/pem2c/releases) section.
 
 ### Command-line
 
