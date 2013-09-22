@@ -98,7 +98,7 @@ EVP_PKEY* load_pubkey()
 
     if (!pubkey)
     {
-        //throw std::runtime_error("failed to load updater public key: d2i_PUBKEY failed");
+        //throw std::runtime_error("failed to load public key: d2i_PUBKEY failed");
         abort();
     }
 
