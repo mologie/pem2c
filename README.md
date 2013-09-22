@@ -39,14 +39,11 @@ void load_certificate_chain(X509_STORE* certificate_store)
 
         if (!x)
         {
-            //throw std::runtime_error("failed to initialize trust store: d2i_X509 failed");
             abort();
         }
 
         if (X509_STORE_add_cert(certificate_store, x) != 1)
         {
-            X509_free(x);
-            //throw std::runtime_error("failed to initialize trust store: X509_STORE_add_cert failed");
             abort();
         }
 
@@ -67,14 +64,11 @@ void load_certificate(X509_STORE* certificate_store)
 
     if (!x)
     {
-        //throw std::runtime_error("failed to initialize trust store: d2i_X509 failed");
         abort();
     }
 
     if (X509_STORE_add_cert(certificate_store, x) != 1)
     {
-        X509_free(x);
-        //throw std::runtime_error("failed to initialize trust store: X509_STORE_add_cert failed");
         abort();
     }
 
@@ -95,7 +89,6 @@ EVP_PKEY* load_pubkey()
 
     if (!pubkey)
     {
-        //throw std::runtime_error("failed to load public key: d2i_PUBKEY failed");
         abort();
     }
 
