@@ -13,7 +13,7 @@ Compile using `gcc pem2c.c -o pem2c -O2 -lcrypto` or download a precompiled bina
 
 ### Command-line
 
-This utility reads the PEM-encoded file from stin, and writes a header file to stdout. The first argument describes the file type, the second argument the macro name used in the header file:
+This utility reads the PEM-encoded file from stdin, and writes a header file to stdout. The first argument describes the file type, the second argument the macro name used in the header file:
 
 `pem2c x509 MY_MACRO_NAME <my-certificate.pem >my-header.h`
 
