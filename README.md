@@ -35,7 +35,7 @@ NOsF/5oirpt9P/FlUQqmMGqz9IgcgA38corog14=
 
 ### Compilation
 
-Compile using `gcc pem2c.c -o pem2c -O2 -lcrypto`, use the CMake project, or download a precompiled binary for Windows from the [release](https://github.com/mologie/pem2c/releases) section. OpenSSL and its headers must are required.
+Compile using `gcc pem2c.c -o pem2c -O2 -lcrypto`, use the CMake project, or download a precompiled binary for Windows from the [release](https://github.com/mologie/pem2c/releases) section. OpenSSL and its header files are required.
 
 ### Command-line
 
